@@ -1,5 +1,104 @@
-$primary-color: #424;
+$primary-color: #F2F6F5;
+$secondary-color: #E8ABA6;
+$text-color:#0E3A5D;
+$show-home-image: true;
+$home-image: url('../img/art-background-blank-951240.jpg');
+$background-opacity: 0.9;
+
+@mixin easeOut {
+    transition: all .5s ease-out;
+}
+
+@mixin background{
+    @if $show-home-image{
+        &#bg-img{
+            background: $home-image;
+            background-attachment: fixed;
+            background-size: cover;
+
+            &:after{
+                content:'';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba($primary-color, $background-opacity);
+                z-index: -1;
+            }
+        }
+    }
+}
+
+
+*{
+    box-sizing: border-box;
+}
 
 body {
-  background-color: $primary-color;
+    @include background;
+    background-color: $primary-color;
+    height:100%;
+    margin: 0;
+    color: $text-color;
+    font-family: 'Montserrat', sans-serif, Tahoma, Geneva, Verdana;
+    line-height: 1.5;
+}
+
+//Headings
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-weight: 400;
+
+    &.heading--large{
+        font-size: 6rem;
+    }
+
+    &.heading--small{
+        margin-bottom:2rem;
+        padding: 0.2rem 1rem;
+        background: rgba(lighten($primary-color, 2),0.5);
+    }
+}
+
+a{
+    color:#403F47;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+.text--secondary{
+    color: $secondary-color;
+}
+
+main {
+    padding: 4rem;
+    height: 100%;
+
+    .icons{
+        margin-top: 1rem;
+
+        a{
+            padding: 0.4rem;
+
+            &:hover{
+                color: $secondary-color;
+                @include easeOut();
+            }
+        }
+    }
+
+    &#home{
+        overflow:hidden;
+        h1{
+            margin-top: 20vh;
+        }
+    }
 }

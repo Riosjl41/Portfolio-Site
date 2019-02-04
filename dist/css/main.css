@@ -1,2 +1,66 @@
+* {
+  box-sizing: border-box; }
+
 body {
-  background-color: #424; }
+  background-color: #F2F6F5;
+  height: 100%;
+  margin: 0;
+  color: #0E3A5D;
+  font-family: 'Montserrat', sans-serif, Tahoma, Geneva, Verdana;
+  line-height: 1.5; }
+  body#bg-img {
+    background: url("../img/art-background-blank-951240.jpg");
+    background-attachment: fixed;
+    background-size: cover; }
+    body#bg-img:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(242, 246, 245, 0.9);
+      z-index: -1; }
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400; }
+  h1.heading--large,
+  h2.heading--large,
+  h3.heading--large {
+    font-size: 6rem; }
+  h1.heading--small,
+  h2.heading--small,
+  h3.heading--small {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(248, 250, 250, 0.5); }
+
+a {
+  color: #403F47;
+  text-decoration: none; }
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%; }
+
+.text--secondary {
+  color: #E8ABA6; }
+
+main {
+  padding: 4rem;
+  height: 100%; }
+  main .icons {
+    margin-top: 1rem; }
+    main .icons a {
+      padding: 0.4rem; }
+      main .icons a:hover {
+        color: #E8ABA6;
+        transition: all .5s ease-out; }
+  main#home {
+    overflow: hidden; }
+    main#home h1 {
+      margin-top: 20vh; }
