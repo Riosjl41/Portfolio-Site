@@ -4,13 +4,13 @@
   right: 35px;
   top: 35px;
   cursor: pointer;
-  transition: all .5s ease-out; }
+  transition: all 0.5s ease-out; }
   .menu__btn .btn--line {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
     background: #49c5b6;
-    transition: all .5s ease-out; }
+    transition: all 0.5s ease-out; }
   .menu__btn.close {
     transform: rotate(180deg); }
     .menu__btn.close .btn--line:nth-child(1) {
@@ -42,13 +42,13 @@
     background: #e3ece9;
     list-style: none;
     transform: translate3d(0, -100%, 0);
-    transition: all .5s ease-out; }
+    transition: all 0.5s ease-out; }
     .menu__nav.show {
       transform: translate3d(0, 0, 0); }
   .menu--branding {
-    background: #F2F6F5;
+    background: #f2f6f5;
     transform: translate3d(0, 100%, 0);
-    transition: all .5s ease-out; }
+    transition: all 0.5s ease-out; }
     .menu--branding.show {
       transform: translate3d(0, 0, 0); }
     .menu--branding .photo {
@@ -56,25 +56,25 @@
       height: 250px;
       background: url("../img/art-background-blank-951240.jpg");
       border-radius: 50%;
-      border: solid 3px #E8ABA6; }
+      border: solid 3px #e8aba6; }
   .menu .nav__item {
     transform: translate3d(600px, 0, 0);
-    transition: all .5s ease-out; }
+    transition: all 0.5s ease-out; }
     .menu .nav__item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav__item.current > a {
-      color: #E8ABA6; }
+      color: #e8aba6; }
   .menu .nav__link {
     display: inline-block;
     position: relative;
-    font-size: 2rem;
+    font-size: 36px;
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
     text-decoration: none;
-    transition: all .5s ease-out; }
+    transition: all 0.5s ease-out; }
     .menu .nav__link:hover {
-      color: #E8ABA6; }
+      color: #e8aba6; }
 
 .nav__item:nth-child(1) {
   transition-delay: 0.11s; }
@@ -88,14 +88,46 @@
 .nav__item:nth-child(4) {
   transition-delay: 0.44s; }
 
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .heading--large {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu__nav,
+  div.menu--branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu__nav.show,
+    div.menu--branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu__nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0); }
+    .menu__nav .nav__link {
+      font-size: 24px; }
+  .menu--branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu--branding .photo {
+      background: url("../img/art-background-blank-951240.jpg");
+      width: 150px;
+      height: 150px; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; } }
+
 * {
   box-sizing: border-box; }
 
 body {
-  background-color: #F2F6F5;
+  background-color: #f2f6f5;
   height: 100%;
   margin: 0;
-  color: #0E3A5D;
+  color: #0e3a5d;
   font-family: 'Montserrat', sans-serif, Tahoma, Geneva, Verdana;
   line-height: 1.5; }
   body#bg-img {
@@ -103,7 +135,7 @@ body {
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       right: 0;
@@ -138,7 +170,7 @@ header {
   width: 100%; }
 
 .text--secondary {
-  color: #E8ABA6; }
+  color: #e8aba6; }
 
 main {
   padding: 4rem;
@@ -148,8 +180,8 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #E8ABA6;
-        transition: all .5s ease-out; }
+        color: #e8aba6;
+        transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
     main#home h1 {

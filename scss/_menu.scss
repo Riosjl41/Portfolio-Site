@@ -88,7 +88,7 @@
     .photo {
       width: 250px;
       height: 250px;
-      background: url('../img/art-background-blank-951240.jpg');
+      background: url("../img/art-background-blank-951240.jpg");
       border-radius: 50%;
       border: solid 3px $secondary-color;
     }
@@ -103,30 +103,30 @@
       transform: translate3d(0, 0, 0);
     }
 
-    &.current > a{
-        color: $secondary-color;
+    &.current > a {
+      color: $secondary-color;
     }
   }
 
-  .nav__link{
-      display: inline-block;
-      position: relative;
-      font-size: 2rem;
-      text-transform: uppercase;
-      padding: 1rem 0;
-      font-weight: 300;
-      text-decoration: none;
-      @include easeOut;
+  .nav__link {
+    display: inline-block;
+    position: relative;
+    font-size: 36px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    text-decoration: none;
+    @include easeOut;
 
-      &:hover{
-          color: $secondary-color;
-      }
+    &:hover {
+      color: $secondary-color;
+    }
   }
 }
 
 //Delay each nav item slide by 0.1s
 @for $x from 1 through 4 {
-    .nav__item:nth-child(#{$x}){
-        transition-delay: $x * 0.11s;
-    }
+  .nav__item:nth-child(#{$x}) {
+    transition-delay: $x * 0.11s;
+  }
 }

@@ -1,0 +1,58 @@
+// Widescreens
+@include mediaXl {
+}
+
+// Desktops & Laptops
+@include mediaLg {
+}
+
+// Tablets
+@include mediaMd {
+  main {
+    align-items: center;
+    text-align: center;
+
+    .heading--large {
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+  }
+
+  ul.menu__nav,
+  div.menu--branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .menu__nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    
+    .nav__link{
+      font-size: 24px;
+    }
+  }
+
+  .menu--branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+
+    .photo{
+      background:url('../img/art-background-blank-951240.jpg');
+      width: 150px;
+      height:150px;
+    }
+  }
+}
+
+// Widescreens
+@include mediaSm {
+  main#home h1 {
+    margin-top: 10vh;
+  }
+}
