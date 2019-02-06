@@ -11,10 +11,10 @@
             integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
             crossorigin="anonymous">
         <link rel='stylesheet' href="css/main.css">
-        <title>Portfolio</title>
+        <title>My Work</title>
     </head>
 
-    <body id='bg-img'>
+    <body>
         <header>
             <div class="menu__btn">
                 <div class="btn--line"></div>
@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 <ul class="menu__nav">
-                    <li class="nav__item current">
+                    <li class="nav__item">
                         <a href='index.html' class='nav__link'>
                             Home
                         </a>
@@ -39,7 +39,7 @@
                             About Me
                         </a>
                     </li>
-                    <li class="nav__item">
+                    <li class="nav__item current">
                         <a href='work.html' class='nav__link'>
                             Projects
                         </a>
@@ -53,22 +53,54 @@
             </nav>
         </header>
 
-        <main id='home'>
+        <main id='work'>
             <h1 class="heading--large">
-                Jose <span class='text--secondary'>Rios</span>
+                My <span class='text--secondary'>Work</span>
             </h1>
             <h2 class="heading--small">
-                Web Developer
+                Some of my projects...
             </h2>
-            <div class="icons">
-                <a href="#!">
-                    <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-                <a href="#!">
-                    <i class="fab fa-github fa-2x"></i>
-                </a>
+
+            <div class='projects'>
+                <div class='item'>
+                    <a href='#!'>
+                        <img src='img/camera.jpg' alt='Project'>
+                    </a>
+                    <a href="#" class='btn--light'>
+                        <i class="fas fa-eye"></i>Project
+                    </a>
+                    <a href="#" class='btn--dark'>
+                        <i class="fab fa-github"></i>Github
+                    </a>
+                </div>
+                <div class='item'>
+                    <a href='#!'>
+                        <img src="img/camera.jpg" alt='Project'>
+                    </a>
+                    <a href="#" class='btn--light'>
+                        <i class="fas fa-eye"></i>Project
+                    </a>
+                    <a href="#" class='btn--dark'>
+                        <i class="fab fa-github"></i>Github
+                    </a>
+                </div><div class='item'>
+                    <a href='#!'>
+                        <img src='img/camera.jpg' alt='Project'>
+                    </a>
+                    <a href="#" class='btn--light'>
+                        <i class="fas fa-eye"></i>Project
+                    </a>
+                    <a href="#" class='btn--dark'>
+                        <i class="fab fa-github"></i>Github
+                    </a>
+                </div>
+
             </div>
         </main>
+
+        <footer id="main__footer">
+            Copyright &copy; 2019
+        </footer>
 
         <script src="js/main.js"></script>
     </body>
