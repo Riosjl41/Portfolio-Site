@@ -6,12 +6,10 @@
 }
 
 body {
-  @include background;
   background-color: $primary-color;
   height: 100%;
   margin: 0;
   color: $text-color;
-  font-family: "Montserrat", sans-serif, Tahoma, Geneva, Verdana;
   line-height: 1.5;
 }
 
@@ -21,7 +19,10 @@ h2,
 h3 {
   margin: 0;
   font-weight: 400;
-
+  font-family: "Playfair Display", sans-serif, Tahoma, Geneva, Verdana;
+  font-weight: 900;
+  color: $highlight-color;
+  
   &.heading--large {
     font-size: 6rem;
   }
@@ -51,6 +52,8 @@ header {
 main {
   padding: 4rem;
   min-height: calc(100vh - 60px);
+  font-family: 'Roboto', sans-serif;
+
 
   .icons {
     margin-top: 1rem;
@@ -73,6 +76,7 @@ main {
   }
 }
 
+//About
 .about--info {
   display: grid;
   grid-gap: 30px;
@@ -115,16 +119,16 @@ main {
 //Projects
 .projects{
   display: grid;
-  grid-gap: 0.7rem;
+  grid-gap: 1rem;
   grid-template-columns: repeat(3,1fr);
+  justify-items: center;
 
   img{
     width: 100%;
     border: 3px #fff solid;
 
     &:hover{
-      opacity: 0.5;
-      border-color: $secondary-color;
+      border-color: $highlight-color;
       @include easeOut;
     }
   }
@@ -181,7 +185,7 @@ main {
 #main__footer{
     text-align: center;
     padding: 1rem;
-    background: darken($primary-color,10);
+    background: darken($primary-color, 5);
     height: 60px;
 }
 

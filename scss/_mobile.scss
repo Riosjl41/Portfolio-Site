@@ -21,6 +21,7 @@
     .heading--large {
       line-height: 1;
       margin-bottom: 1rem;
+      font-size: 4rem;
     }
   }
 
@@ -76,7 +77,30 @@
     margin-top: 10vh;
   }
 
+  main {
+    .heading--large {
+      font-size: 3rem;
+    }
+  }
+
+  .about--info {
+    .bio{
+        font-size: 1rem;
+    }
+  }
+
+
   .projects{
     grid-template-columns: 1fr;
   }
+
+  .boxes{
+    div{
+      border-left: none;
+      border-right:none;
+      padding: 0;
+      margin-bottom: 3rem;
+    }
+  }
 }
+
