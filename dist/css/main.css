@@ -39,14 +39,14 @@
   .menu__nav {
     margin: 0;
     padding: 0;
-    background: #ca303f;
+    background: #D2414F;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu__nav.show {
       transform: translate3d(0, 0, 0); }
   .menu--branding {
-    background: #11082B;
+    background: #F9ECD0;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu--branding.show {
@@ -56,7 +56,7 @@
       height: 250px;
       background: url("../img/art-background-blank-951240.jpg");
       border-radius: 50%;
-      border: solid 3px #D2414F; }
+      border: solid 3px #11082B; }
   .menu .nav__item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -67,7 +67,7 @@
   .menu .nav__link {
     display: inline-block;
     position: relative;
-    font-size: 36px;
+    font-size: 3rem;
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
@@ -158,48 +158,51 @@ main {
       margin-top: 20vh; }
 
 #work .title {
-  background-color: #11082B;
-  height: 75vh; }
+  background-color: #11082B; }
 
 .projects {
+  margin-top: 5rem;
   display: grid;
   grid-gap: 2rem;
-  background-color: #faeed5;
-  grid-template-areas: "project1 . description1 description1" "project2 . description2 description2" "project3 . description3 description3"; }
+  background-color: #11082B;
+  grid-template-areas: "project1 . description1 description1" "project2 . description2 description2" "project3 . description3 description3"; }
+  .projects p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #F9ECD0;
+    margin-top: 10rem; }
   .projects .item1 {
     grid-area: project1; }
   .projects .item1--desc {
     grid-area: description1; }
   .projects .item2 {
-    grid-area: project2; }
-  .projects .item2--desc {
-    grid-area: description2; }
-  .projects .item3 {
     grid-area: project3; }
-  .projects .item3--desc {
+  .projects .item2--desc {
     grid-area: description3; }
+  .projects .item3 {
+    grid-area: project2; }
+  .projects .item3--desc {
+    grid-area: description2; }
   .projects img {
     width: 175%;
     border: 3px #fff solid; }
     .projects img:hover {
-      border-color: #F9ECD0;
+      border-color: #D2414F;
       transition: all 0.5s ease-out; }
 
 .boxes {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 1rem; }
+  margin-top: 3rem; }
   .boxes div {
     font-size: 2rem;
-    border: 3px #F9ECD0 solid;
-    padding: 1.5rem 2.5rem;
+    color: #F9ECD0;
     margin-bottom: 3rem;
-    background-color: #F9ECD0;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
-      padding: 0.5rem 1.5rem;
       background: #D2414F; }
       .boxes div:hover span {
         color: #fff; }
@@ -211,7 +214,7 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn--dark:hover, .btn--light:hover {
-    background: #D2414F; }
+    background: #F9ECD0; }
 
 .btn--dark {
   background: black;

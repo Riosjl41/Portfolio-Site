@@ -2,196 +2,196 @@
 @import "menu";
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  padding: 0;
-  margin: 0;
-  line-height: 1.5;
-  background-color: $primary-color;
-
+	padding: 0;
+	margin: 0;
+	line-height: 1.5;
+	background-color: $primary-color;
 }
 
 .background {
-  background:$primary-color;
-  position: fixed;
-  width:100%;
-  top:0;
-  right: 0;
-  bottom:0;
-  left:0;
-  z-index: -13242;
+	background: $primary-color;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -13242;
 }
-
 
 //Headings
 h1,
 h2,
 h3 {
-  margin: 0;
-  font-weight: 400;
-  font-family: "Playfair Display", sans-serif, Tahoma, Geneva, Verdana;
-  font-weight: 900;
-  color: $highlight-color;
+	margin: 0;
+	font-weight: 400;
+	font-family: "Playfair Display", sans-serif, Tahoma, Geneva, Verdana;
+	font-weight: 900;
+	color: $highlight-color;
 
-  &.heading--large {
-    font-size: 6rem;
-  }
+	&.heading--large {
+		font-size: 6rem;
+	}
 
-  &.heading--small {
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-  }
+	&.heading--small {
+		margin-bottom: 2rem;
+		padding: 0.2rem 1rem;
+	}
 }
 
 a {
-  color: #7e7e7e;
-  text-decoration: none;
+	color: #7e7e7e;
+	text-decoration: none;
 }
 
 header {
-  position: fixed;
-  z-index: 1;
-  width: 100%;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
 }
 
 .text--secondary {
-  color: $secondary-color;
+	color: $secondary-color;
 }
 
 main {
-  padding: 4rem;
-  min-height: calc(100vh - 60px);
-  font-family: "Roboto", sans-serif;
+	padding: 4rem;
+	min-height: calc(100vh - 60px);
+	font-family: "Roboto", sans-serif;
 
-  .heading--small {
-    font-size: 2.5rem;
-  }
+	.heading--small {
+		font-size: 2.5rem;
+	}
 
-  .icons {
-    margin-top: 1rem;
+	.icons {
+		margin-top: 1rem;
 
-    a {
-      padding: 0.4rem;
-      color: $highlight-color;
+		a {
+			padding: 0.4rem;
+			color: $highlight-color;
 
-      &:hover {
-        color: $secondary-color;
-        @include easeOut();
-      }
-    }
-  }
+			&:hover {
+				color: $secondary-color;
+				@include easeOut();
+			}
+		}
+	}
 
-  &#home {
-    overflow: hidden;
-    h1 {
-      margin-top: 20vh;
-    }
-  }
+	&#home {
+		overflow: hidden;
+		h1 {
+			margin-top: 20vh;
+		}
+	}
 }
 
 //Projects
-
-#work{
-  .title{
-    background-color: $primary-color;
-    height:75vh;
-  }
+#work {
+	.title {
+		background-color: $primary-color;
+	}
 }
 .projects {
-  display: grid;
-  grid-gap: 2rem;
-  background-color: lighten($highlight-color, 1);
-  grid-template-areas:
-    "project1 . description1 description1"
-    "project2 . description2 description2"
-    "project3 . description3 description3";
+	margin-top: 5rem;
+	display: grid;
+	grid-gap: 2rem;
+	background-color: $primary-color;
+	grid-template-areas: "project1 . description1 description1" "project2 . description2 description2"
+		"project3 . description3 description3";
 
-  .item1 {
-    grid-area: project1;
-  }
+	p {
+		font-size: 20px;
+		font-weight: bold;
+		color: $highlight-color;
+		margin-top: 10rem;
+	}
 
-  .item1--desc {
-    grid-area: description1;
-  }
+	.item1 {
+		grid-area: project1;
+	}
 
-  .item2 {
-    grid-area: project2;
-  }
+	.item1--desc {
+		grid-area: description1;
+	}
 
-  .item2--desc {
-    grid-area: description2;
-  }
+	.item2 {
+		grid-area: project3;
+	}
 
-  .item3 {
-    grid-area: project3;
-  }
+	.item2--desc {
+		grid-area: description3;
+	}
 
-  .item3--desc {
-    grid-area: description3;
-  }
+	.item3 {
+		grid-area: project2;
+	}
 
-  img {
-    width: 175%;
-    border: 3px #fff solid;
+	.item3--desc {
+		grid-area: description2;
+	}
 
-    &:hover {
-      border-color: $highlight-color;
-      @include easeOut;
-    }
-  }
+	img {
+		width: 175%;
+		border: 3px #fff solid;
+
+		&:hover {
+			border-color: $secondary-color;
+			@include easeOut;
+		}
+	}
 }
 
-
 //Contact Page
+
 .boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 3rem;
 
-  div {
-    font-size: 2rem;
-    border: 3px $highlight-color solid;
-    padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
-    background-color: $highlight-color;
-    @include easeOut;
+	div {
+		font-size: 2rem;
+		color: $highlight-color;
+		margin-bottom: 3rem;
+		@include easeOut;
 
-    &:hover {
-      padding: 0.5rem 1.5rem;
-      background: $secondary-color;
-      span {
-        color: #fff;
-      }
-    }
-  }
+		&:hover {
+			background: $secondary-color;
+			span {
+				color: #fff;
+			}
+		}
+	}
 }
 
 //Btn Styles
 .btn {
-  display: block;
-  padding: 0.5rem 2rem;
-  width: 175%;
-  border: 0;
-  margin-bottom: 0.3rem;
-  &:hover {
-    background: $text-color;
-  }
+	display: block;
+	padding: 0.5rem 2rem;
+	width: 175%;
+	border: 0;
+	margin-bottom: 0.3rem;
+	&:hover {
+		background: $highlight-color;
+	}
 }
 
 .btn--dark {
-  @extend .btn;
-  background: darken($primary-color, 50);
-  color: #fff;
+	@extend .btn;
+	background: darken($primary-color, 10);
+	color: #fff;
 }
 
 .btn--light {
-  @extend .btn;
-  background: $secondary-color;
-  color: #fff;
+	@extend .btn;
+	background: $secondary-color;
+	color: #fff;
 }
 
 @import "mobile";
