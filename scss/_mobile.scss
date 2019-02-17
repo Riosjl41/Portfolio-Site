@@ -57,7 +57,6 @@
 		}
 	}
 	#work h1 {
-		padding: 1rem;
 		text-align: center;
 	}
 }
@@ -65,16 +64,10 @@
 // Widescreens
 @include mediaSm {
 	main {
-	
-		h2{
-			font-size: 1rem;
-		}
-
-
 		.heading--large {
 			font-size: 3rem;
 			text-align: center;
-			margin-bottom: 1.5rem;
+			margin: 2rem 0;
 		}
 
 		.heading--small {
@@ -82,9 +75,41 @@
 			text-align: center;
 		}
 
+		.about {
+			&--info {
+				.bio {
+					font-size: 1rem;
+				}
+			}
+
+			.icons {
+				text-align: center;
+			}
+		}
+
+		.boxes {
+			div {
+				border-left: none;
+				border-right: none;
+				padding: 0;
+				margin-bottom: 3rem;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				font-size: 1.5rem;
+			}
+		}
+
+		.btn {
+			width: 100%;
+		}
+	}
+
+	#work {
 		.projects {
 			.project {
 				display: block;
+				border:none;
 			}
 			img {
 				width: 100%;
@@ -110,33 +135,8 @@
 				padding: 2rem;
 			}
 		}
-
-		.about--info {
-			.bio {
-				font-size: 1rem;
-			}
-		}
-		.icons {
-			text-align: center;
-		}
-
-		.boxes {
-			div {
-				border-left: none;
-				border-right: none;
-				padding: 0;
-				margin-bottom: 3rem;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				font-size: 1.5rem;
-			}
-		}
-
-		.btn {
-			width: 100%;
-		}
 	}
+
 	.menu {
 		&--branding {
 			display: none;
@@ -145,11 +145,15 @@
 			height: 100vh;
 		}
 	}
-
-
 }
 
-@media screen and (orientation:landscape)
-and (max-width: 1200px) {
-
+@media screen and (orientation: landscape) and (max-width: 750px) {
+	.menu {
+		&--branding {
+			display: none;
+		}
+		&__nav {
+			height: 100vh;
+		}
+	}
 }
