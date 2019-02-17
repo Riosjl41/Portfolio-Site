@@ -1,106 +1,155 @@
 // Widescreens
 @include mediaXl {
-  .projects{
-    grid-template-columns: repeat(4,1fr);
-  }
 }
 
 // Desktops & Laptops
 @include mediaLg {
-  .projects{
-    grid-template-columns: repeat(3,1fr);
-  }
+	.btn {
+		width: 100%;
+	}
 }
 
 // Tablets
 @include mediaMd {
-  main {
-    align-items: center;
-    text-align: center;
+	main {
+		align-items: center;
+		text-align: center;
 
-    .heading--large {
-      line-height: 1;
-      margin-bottom: 1rem;
-      font-size: 4rem;
-    }
-  }
+		.heading--large {
+			line-height: 1;
+			margin-bottom: 1rem;
+			font-size: 4rem;
+		}
 
-  ul.menu__nav,
-  div.menu--branding {
-    float: none;
-    width: 100%;
-    min-height: 0;
+		.heading--small {
+			font-size: 1.5rem;
+		}
+	}
 
-    &.show {
-      transform: translate3d(0, 0, 0);
-    }
-  }
+	ul.menu__nav,
+	div.menu--branding {
+		float: none;
+		width: 100%;
+		min-height: 0;
 
-  .menu__nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0);
-    
-    .nav__link{
-      font-size: 24px;
-    }
-  }
+		&.show {
+			transform: translate3d(0, 0, 0);
+		}
+	}
 
-  .menu--branding {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0);
+	.menu__nav {
+		height: 75vh;
+		transform: translate3d(-100%, 0, 0);
 
-    .photo{
-      background:url('../img/art-background-blank-951240.jpg');
-      width: 150px;
-      height:150px;
-    }
-  }
+		.nav__link {
+			font-size: 24px;
+		}
+	}
 
-  .about--info{
-    grid-template-areas:
-    'bioimage'
-    'bio'
-    'job1'
-    'job2'
-    'job3';
-    grid-template-columns: 1fr;
-  }
+	.menu--branding {
+		height: 25vh;
+		transform: translate3d(100%, 0, 0);
 
-  .projects{
-    grid-template-columns: repeat(2,1fr);
-  }
+		.photo {
+			background: url('../img/art-background-blank-951240.jpg');
+			width: 150px;
+			height: 150px;
+		}
+	}
+	#work h1 {
+		padding: 1rem;
+		text-align: center;
+	}
 }
 
 // Widescreens
 @include mediaSm {
-  main#home h1 {
-    margin-top: 10vh;
-  }
-
-  main {
-    .heading--large {
-      font-size: 3rem;
-    }
-  }
-
-  .about--info {
-    .bio{
-        font-size: 1rem;
-    }
-  }
+	main {
+	
+		h2{
+			font-size: 1rem;
+		}
 
 
-  .projects{
-    grid-template-columns: 1fr;
-  }
+		.heading--large {
+			font-size: 3rem;
+			text-align: center;
+			margin-bottom: 1.5rem;
+		}
 
-  .boxes{
-    div{
-      border-left: none;
-      border-right:none;
-      padding: 0;
-      margin-bottom: 3rem;
-    }
-  }
+		.heading--small {
+			font-size: 1rem;
+			text-align: center;
+		}
+
+		.projects {
+			.project {
+				display: block;
+			}
+			img {
+				width: 100%;
+				padding: 0 1rem;
+			}
+			p {
+				width: 100%;
+				padding: 0;
+			}
+
+			.item1--desc {
+				width: 100%;
+				padding: 2rem;
+			}
+
+			.item2--desc {
+				width: 100%;
+				padding: 2rem;
+			}
+
+			.item3--desc {
+				width: 100%;
+				padding: 2rem;
+			}
+		}
+
+		.about--info {
+			.bio {
+				font-size: 1rem;
+			}
+		}
+		.icons {
+			text-align: center;
+		}
+
+		.boxes {
+			div {
+				border-left: none;
+				border-right: none;
+				padding: 0;
+				margin-bottom: 3rem;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				font-size: 1.5rem;
+			}
+		}
+
+		.btn {
+			width: 100%;
+		}
+	}
+	.menu {
+		&--branding {
+			display: none;
+		}
+		&__nav {
+			height: 100vh;
+		}
+	}
+
+
 }
 
+@media screen and (orientation:landscape)
+and (max-width: 1200px) {
+
+}

@@ -40,6 +40,7 @@ h3 {
 	&.heading--small {
 		margin-bottom: 2rem;
 		padding: 0.2rem 1rem;
+		font-size: 3rem;
 	}
 }
 
@@ -59,14 +60,17 @@ header {
 }
 
 main {
-	padding: 4rem;
-	min-height: calc(100vh - 60px);
 	font-family: "Roboto", sans-serif;
+}
 
-	.heading--small {
-		font-size: 2.5rem;
-	}
-
+//Home page
+#home {
+	overflow: hidden;
+	padding: 0 4rem;
+	height:100vh;
+	display:flex;
+	align-items: center;
+	
 	.icons {
 		margin-top: 1rem;
 
@@ -80,80 +84,85 @@ main {
 			}
 		}
 	}
-
-	&#home {
-		overflow: hidden;
-		h1 {
-			margin-top: 20vh;
-		}
-	}
 }
 
 //Projects
 #work {
-	.title {
-		background-color: $primary-color;
+	h1 {
+		padding: 4rem;
 	}
 }
 .projects {
 	margin-top: 5rem;
-	display: grid;
+	display: block;
 	grid-gap: 2rem;
-	background-color: $primary-color;
-	grid-template-areas: "project1 . description1 description1" "project2 . description2 description2"
-		"project3 . description3 description3";
+	//grid-template-areas: "project1 . description1 description1" "project2 . description2 description2"
+	//	"project3 . description3 description3";
+
+	.project {
+		display: flex;
+		margin: 0;
+		padding: 0;
+
+		&--2 {
+			flex-direction: row-reverse;
+		}
+	}
 
 	p {
 		font-size: 20px;
 		font-weight: bold;
 		color: $highlight-color;
-		margin-top: 10rem;
-	}
-
-	.item1 {
-		grid-area: project1;
+		text-align: center;
+		padding-left: 10vw;
+		padding-right: 10vw;
 	}
 
 	.item1--desc {
-		grid-area: description1;
-	}
-
-	.item2 {
-		grid-area: project3;
+		display: flex;
+		align-items: center;
+		background-color: darken($primary-color, .5);
+		width: 60vw;
 	}
 
 	.item2--desc {
-		grid-area: description3;
-	}
-
-	.item3 {
-		grid-area: project2;
+		display: flex;
+		align-items: center;
+		background-color: darken($primary-color, 1);
+		width: 60vw;
 	}
 
 	.item3--desc {
-		grid-area: description2;
+		display: flex;
+		align-items: center;
+		background-color: darken($primary-color, 1.5);
+		width: 60vw;
 	}
 
 	img {
-		width: 175%;
-		border: 3px #fff solid;
+		width: 40vw;
 
 		&:hover {
-			border-color: $secondary-color;
+			border: 3px $secondary-color solid;
 			@include easeOut;
 		}
 	}
 }
 
 //Contact Page
-
+#about {
+	h1 {
+		font-size: 6rem;
+		padding: 4rem;
+	}
+}
 .boxes {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
-	margin-top: 3rem;
+	margin-top: 5rem;
 
 	div {
 		font-size: 2rem;
@@ -174,7 +183,7 @@ main {
 .btn {
 	display: block;
 	padding: 0.5rem 2rem;
-	width: 175%;
+	width: 40vw;
 	border: 0;
 	margin-bottom: 0.3rem;
 	&:hover {
@@ -184,14 +193,14 @@ main {
 
 .btn--dark {
 	@extend .btn;
-	background: darken($primary-color, 10);
-	color: #fff;
+	color: $primary-color;
+	background: $highlight-color;
 }
 
 .btn--light {
 	@extend .btn;
 	background: $secondary-color;
-	color: #fff;
+	color: $primary-color;
 }
 
 @import "mobile";
