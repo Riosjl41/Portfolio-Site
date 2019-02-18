@@ -92,6 +92,11 @@ main {
 		padding: 4rem;
 	}
 
+	h2{
+		font-size:3rem;
+		padding:3rem;
+	}
+
 	.projects {	
 		.project {
 			border: 1px inset $highlight-color;
@@ -114,23 +119,38 @@ main {
 
 		.item1--desc {
 			display: flex;
+			flex-direction: column;
 			align-items: center;
 			background-color: darken($primary-color, 1);
 			width: 60vw;
+
+			h1{
+				font-size:3rem;
+			}
 		}
 
 		.item2--desc {
 			display: flex;
+			flex-direction: column;
 			align-items: center;
 			background-color: darken($primary-color, 2);
 			width: 60vw;
+
+			h1{
+				font-size:3rem;
+			}
 		}
 
 		.item3--desc {
 			display: flex;
+			flex-direction: column;
 			align-items: center;
 			background-color: darken($primary-color, 3);
 			width: 60vw;
+
+			h1{
+				font-size:3rem;
+			}
 		}
 
 		img {

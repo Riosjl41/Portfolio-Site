@@ -7,6 +7,12 @@
 	.btn {
 		width: 100%;
 	}
+
+	#work{
+		.projects p{
+			font-size:18px;
+		}
+	}
 }
 
 // Tablets
@@ -56,8 +62,18 @@
 			height: 150px;
 		}
 	}
-	#work h1 {
-		text-align: center;
+	#work {
+		h1 {
+			text-align: center;
+			padding: 3rem;
+		}
+		h2 {
+			font-size: 2rem;
+			padding: 1rem;
+		}
+	}
+	#about h1 {
+		padding: 3rem;
 	}
 }
 
@@ -106,10 +122,13 @@
 	}
 
 	#work {
+		h1 {
+			padding: 1rem;
+		}
 		.projects {
 			.project {
 				display: block;
-				border:none;
+				border: none;
 			}
 			img {
 				width: 100%;
@@ -137,6 +156,12 @@
 		}
 	}
 
+	#about {
+		h1 {
+			padding: 1rem;
+		}
+	}
+
 	.menu {
 		&--branding {
 			display: none;
@@ -147,13 +172,46 @@
 	}
 }
 
-@media screen and (orientation: landscape) and (max-width: 750px) {
+@include mediaLand {
 	.menu {
 		&--branding {
 			display: none;
 		}
 		&__nav {
 			height: 100vh;
+		}
+	}
+
+	#work {
+		h2{
+			padding:2rem;
+		}
+		
+		.projects {
+			p {
+				font-size: 1rem;
+				padding-left: 1vw;
+				padding-right: 1vw;
+			}
+
+			img {
+				width: 55vw;
+			}
+
+			.btn {
+				width: 55vw;
+			}
+
+			.item1--desc {
+				width: 45vw;
+			}
+
+			.item2--desc {
+				width: 45vw;
+			}
+			.item3--desc {
+				width: 45vw;
+			}
 		}
 	}
 }
