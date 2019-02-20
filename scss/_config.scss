@@ -33,7 +33,19 @@ $show-home-image: true;
 	}
 }
 
-@mixin mediaLand {
+@mixin mediaLandSm {
+	@media screen and (orientation: landscape) and (max-width: 650px) {
+		@content;
+	}
+}
+
+@mixin mediaLandMd {
+	@media screen and (orientation: landscape) and (max-width: 850px) {
+		@content;
+	}
+}
+
+@mixin mediaLandLg {
 	@media screen and (orientation: landscape) and (max-width: 1024px) {
 		@content;
 	}

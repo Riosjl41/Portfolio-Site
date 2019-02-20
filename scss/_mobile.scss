@@ -8,9 +8,12 @@
 		width: 100%;
 	}
 
-	#work{
-		.projects p{
-			font-size:18px;
+	#work {
+		.projects p {
+			font-size: 18px;
+		}
+		h2 {
+			padding: 2rem;
 		}
 	}
 }
@@ -70,6 +73,14 @@
 		h2 {
 			font-size: 2rem;
 			padding: 1rem;
+		}
+		.projects {
+			img {
+				padding: 0;
+			}
+			p{
+				font-size:1rem;
+			}
 		}
 	}
 	#about h1 {
@@ -172,7 +183,7 @@
 	}
 }
 
-@include mediaLand {
+@include mediaLandLg {
 	.menu {
 		&--branding {
 			display: none;
@@ -183,13 +194,15 @@
 	}
 
 	#work {
-		h2{
-			padding:2rem;
+		h2 {
+			padding: 2rem;
+			font-size: 2.5rem;
+			display: flex;
 		}
-		
+
 		.projects {
 			p {
-				font-size: 1rem;
+				font-size: 1.25rem;
 				padding-left: 1vw;
 				padding-right: 1vw;
 			}
@@ -211,6 +224,37 @@
 			}
 			.item3--desc {
 				width: 45vw;
+			}
+		}
+	}
+}
+
+@include mediaLandMd {
+	#work {
+		h1{
+			text-align: center;
+		}
+		h2 {
+			padding: 1rem;
+			font-size:2rem;
+		}
+		.projects {
+			p {
+				font-size: 1rem;
+			}
+		}
+	}
+}
+
+@include mediaLandSm {
+	#work {
+		h2 {
+			padding: 1rem;
+			font-size:2rem;
+		}
+		.projects {
+			p {
+				font-size: .75rem;
 			}
 		}
 	}

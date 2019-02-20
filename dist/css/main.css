@@ -173,7 +173,7 @@ main {
     flex-direction: row-reverse; }
 
 #work .projects p {
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #ebebeb;
   padding-left: 5vw;
@@ -251,7 +251,9 @@ main {
   .btn, .btn--dark, .btn--light {
     width: 100%; }
   #work .projects p {
-    font-size: 18px; } }
+    font-size: 18px; }
+  #work h2 {
+    padding: 2rem; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -289,6 +291,10 @@ main {
   #work h2 {
     font-size: 2rem;
     padding: 1rem; }
+  #work .projects img {
+    padding: 0; }
+  #work .projects p {
+    font-size: 1rem; }
   #about h1 {
     padding: 3rem; } }
 
@@ -348,9 +354,11 @@ main {
   .menu__nav {
     height: 100vh; }
   #work h2 {
-    padding: 2rem; }
+    padding: 2rem;
+    font-size: 2.5rem;
+    display: flex; }
   #work .projects p {
-    font-size: 1rem;
+    font-size: 1.25rem;
     padding-left: 1vw;
     padding-right: 1vw; }
   #work .projects img {
@@ -363,3 +371,19 @@ main {
     width: 45vw; }
   #work .projects .item3--desc {
     width: 45vw; } }
+
+@media screen and (orientation: landscape) and (max-width: 850px) {
+  #work h1 {
+    text-align: center; }
+  #work h2 {
+    padding: 1rem;
+    font-size: 2rem; }
+  #work .projects p {
+    font-size: 1rem; } }
+
+@media screen and (orientation: landscape) and (max-width: 650px) {
+  #work h2 {
+    padding: 1rem;
+    font-size: 2rem; }
+  #work .projects p {
+    font-size: .75rem; } }
