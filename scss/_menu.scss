@@ -11,7 +11,7 @@
 		width: 28px;
 		height: 3px;
 		margin: 0 0 5px 0;
-		background: $highlight-color;
+		background: $hover-color;
 		@include easeOut;
 	}
 
@@ -48,19 +48,14 @@
 		visibility: visible;
 	}
 
-	&--branding,
 	&__nav {
 		display: flex;
 		flex-flow: column wrap;
 		align-items: center;
 		justify-content: center;
-		float: left;
-		width: 50%;
+		width: 100vw;
 		height: 100vh;
 		overflow: hidden;
-	}
-
-	&__nav {
 		margin: 0;
 		padding: 0;
 		background: $secondary-color;
@@ -74,28 +69,7 @@
 		}
 	}
 
-	//Branding side
-	&--branding {
-		background: $highlight-color;
-		transform: translate3d(0, 100%, 0);
-		@include easeOut;
-
-		&.show {
-			//Slide in from bottom
-			transform: translate3d(0, 0, 0);
-		}
-
-		.photo {
-			width: 250px;
-			height: 250px;
-			background: url("../img/art-background-blank-951240.jpg");
-			border-radius: 50%;
-			border: solid 3px $primary-color;
-		}
-	}
-
 	.nav__item {
-		transform: translate3d(600px, 0, 0);
 		@include easeOut;
 
 		&.show {

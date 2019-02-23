@@ -1,5 +1,10 @@
 // Widescreens
 @include mediaXl {
+	#work {
+		.projects p {
+			font-size: 1.25rem;
+		}
+	}
 }
 
 // Desktops & Laptops
@@ -9,11 +14,22 @@
 	}
 
 	#work {
-		.projects p {
-			font-size: 18px;
-		}
-		h2 {
+		h1 {
 			padding: 2rem;
+		}
+
+		h2 {
+			padding: 1rem;
+			text-align: center;
+		}
+
+		.projects {
+			p {
+				font-size: .9rem;
+			}
+			img {
+				width: 50vw;
+			}
 		}
 	}
 }
@@ -47,28 +63,15 @@
 	}
 
 	.menu__nav {
-		height: 75vh;
-		transform: translate3d(-100%, 0, 0);
-
 		.nav__link {
 			font-size: 24px;
 		}
 	}
 
-	.menu--branding {
-		height: 25vh;
-		transform: translate3d(100%, 0, 0);
-
-		.photo {
-			background: url('../img/art-background-blank-951240.jpg');
-			width: 150px;
-			height: 150px;
-		}
-	}
 	#work {
 		h1 {
 			text-align: center;
-			padding: 3rem;
+			padding: 2rem;
 		}
 		h2 {
 			font-size: 2rem;
@@ -77,18 +80,29 @@
 		.projects {
 			img {
 				padding: 0;
+				width: 50vw;
 			}
-			p{
-				font-size:1rem;
+			p {
+				font-size: .7rem;
+			}
+
+			.btn {
+				width: 50vw;
 			}
 		}
 	}
-	#about h1 {
-		padding: 3rem;
+	#about {
+		h1 {
+			padding: 3rem;
+		}
+		.boxes {
+			div {
+				font-size: 1.5rem;
+			}
+		}
 	}
 }
 
-// Widescreens
 @include mediaSm {
 	main {
 		.heading--large {
@@ -143,7 +157,6 @@
 			}
 			img {
 				width: 100%;
-				padding:1rem 0;
 			}
 			p {
 				width: 100%;
@@ -164,80 +177,35 @@
 				width: 100%;
 				padding: 2rem;
 			}
+
+			.btn {
+				width: 100%;
+			}
 		}
 	}
 
 	#about {
 		h1 {
 			padding: 1rem;
-			text-align:center;
+			text-align: center;
 		}
 	}
 
 	.menu {
-		&--branding {
-			display: none;
-		}
 		&__nav {
 			height: 100vh;
-		}
-	}
-}
-
-@include mediaLandLg {
-	.menu {
-		&--branding {
-			display: none;
-		}
-		&__nav {
-			height: 100vh;
-		}
-	}
-
-	#work {
-		h2 {
-			padding: 2rem;
-			font-size: 2.5rem;
-			display: flex;
-		}
-
-		.projects {
-			p {
-				font-size: 1.25rem;
-				padding-left: 1vw;
-				padding-right: 1vw;
-			}
-
-			img {
-				width: 55vw;
-			}
-
-			.btn {
-				width: 55vw;
-			}
-
-			.item1--desc {
-				width: 45vw;
-			}
-
-			.item2--desc {
-				width: 45vw;
-			}
-			.item3--desc {
-				width: 45vw;
-			}
 		}
 	}
 }
 
 @include mediaLandMd {
 	#work {
-		h1{
+		h1 {
 			text-align: center;
 		}
 		h2 {
 			padding: 1rem;
-			font-size:2rem;
+			font-size: 2rem;
 		}
 		.projects {
 			p {
@@ -251,7 +219,7 @@
 	#work {
 		h2 {
 			padding: 1rem;
-			font-size:2rem;
+			font-size: 2rem;
 		}
 		.projects {
 			p {

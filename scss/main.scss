@@ -134,7 +134,7 @@ main {
 			flex-direction: column;
 			align-items: center;
 			background-color: darken($primary-color, 2);
-			width: 60vw;
+			width: 55vw;
 
 			h1{
 				font-size:3rem;
@@ -146,7 +146,7 @@ main {
 			flex-direction: column;
 			align-items: center;
 			background-color: darken($primary-color, 3);
-			width: 60vw;
+			width: 55vw;
 
 			h1{
 				font-size:3rem;
@@ -154,7 +154,7 @@ main {
 		}
 
 		img {
-			width: 40vw;
+			width: 45vw;
 
 			&:hover {
 				border: 3px $hover-color solid;
@@ -198,7 +198,7 @@ main {
 .btn {
 	display: block;
 	padding: 0.5rem 2rem;
-	width: 40vw;
+	width: 45vw;
 	border: 0;
 	margin-bottom: 0.3rem;
 

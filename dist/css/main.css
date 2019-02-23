@@ -9,7 +9,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #ebebeb;
+    background: #0097a7;
     transition: all 0.5s ease-out; }
   .menu__btn.close {
     transform: rotate(180deg); }
@@ -27,16 +27,14 @@
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
-  .menu--branding, .menu__nav {
+  .menu__nav {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    float: left;
-    width: 50%;
+    width: 100vw;
     height: 100vh;
-    overflow: hidden; }
-  .menu__nav {
+    overflow: hidden;
     margin: 0;
     padding: 0;
     background: #ff5851;
@@ -45,20 +43,7 @@
     transition: all 0.5s ease-out; }
     .menu__nav.show {
       transform: translate3d(0, 0, 0); }
-  .menu--branding {
-    background: #ebebeb;
-    transform: translate3d(0, 100%, 0);
-    transition: all 0.5s ease-out; }
-    .menu--branding.show {
-      transform: translate3d(0, 0, 0); }
-    .menu--branding .photo {
-      width: 250px;
-      height: 250px;
-      background: url("../img/art-background-blank-951240.jpg");
-      border-radius: 50%;
-      border: solid 3px #17181a; }
   .menu .nav__item {
-    transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav__item.show {
       transform: translate3d(0, 0, 0); }
@@ -193,7 +178,7 @@ main {
   flex-direction: column;
   align-items: center;
   background-color: #121315;
-  width: 60vw; }
+  width: 55vw; }
   #work .projects .item2--desc h1 {
     font-size: 3rem; }
 
@@ -202,12 +187,12 @@ main {
   flex-direction: column;
   align-items: center;
   background-color: #101112;
-  width: 60vw; }
+  width: 55vw; }
   #work .projects .item3--desc h1 {
     font-size: 3rem; }
 
 #work .projects img {
-  width: 40vw; }
+  width: 45vw; }
   #work .projects img:hover {
     border: 3px #0097a7 solid;
     transition: all 0.5s ease-out; }
@@ -235,7 +220,7 @@ main {
 .btn, .btn--dark, .btn--light {
   display: block;
   padding: 0.5rem 2rem;
-  width: 40vw;
+  width: 45vw;
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn--dark:hover, .btn--light:hover {
@@ -247,13 +232,22 @@ main {
     background: #ff5851;
     color: #17181a; }
 
-@media screen and (min-width: 769px) and (max-width: 1170px) {
+@media screen and (min-width: 1172px) and (max-width: 1300px) {
+  #work .projects p {
+    font-size: 1.25rem; } }
+
+@media screen and (min-width: 769px) and (max-width: 1171px) {
   .btn, .btn--dark, .btn--light {
     width: 100%; }
-  #work .projects p {
-    font-size: 18px; }
+  #work h1 {
+    padding: 2rem; }
   #work h2 {
-    padding: 2rem; } }
+    padding: 1rem;
+    text-align: center; }
+  #work .projects p {
+    font-size: .9rem; }
+  #work .projects img {
+    width: 50vw; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -273,30 +267,25 @@ main {
     ul.menu__nav.show,
     div.menu--branding.show {
       transform: translate3d(0, 0, 0); }
-  .menu__nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0); }
-    .menu__nav .nav__link {
-      font-size: 24px; }
-  .menu--branding {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0); }
-    .menu--branding .photo {
-      background: url("../img/art-background-blank-951240.jpg");
-      width: 150px;
-      height: 150px; }
+  .menu__nav .nav__link {
+    font-size: 24px; }
   #work h1 {
     text-align: center;
-    padding: 3rem; }
+    padding: 2rem; }
   #work h2 {
     font-size: 2rem;
     padding: 1rem; }
   #work .projects img {
-    padding: 0; }
+    padding: 0;
+    width: 50vw; }
   #work .projects p {
-    font-size: 1rem; }
+    font-size: .7rem; }
+  #work .projects .btn, #work .projects .btn--dark, #work .projects .btn--light {
+    width: 50vw; }
   #about h1 {
-    padding: 3rem; } }
+    padding: 3rem; }
+  #about .boxes div {
+    font-size: 1.5rem; } }
 
 @media screen and (max-width: 500px) {
   main .heading--large {
@@ -327,8 +316,7 @@ main {
     display: block;
     border: none; }
   #work .projects img {
-    width: 100%;
-    padding: 1rem 0; }
+    width: 100%; }
   #work .projects p {
     width: 100%;
     padding: 0; }
@@ -341,37 +329,13 @@ main {
   #work .projects .item3--desc {
     width: 100%;
     padding: 2rem; }
+  #work .projects .btn, #work .projects .btn--dark, #work .projects .btn--light {
+    width: 100%; }
   #about h1 {
     padding: 1rem;
     text-align: center; }
-  .menu--branding {
-    display: none; }
   .menu__nav {
     height: 100vh; } }
-
-@media screen and (orientation: landscape) and (max-width: 1024px) {
-  .menu--branding {
-    display: none; }
-  .menu__nav {
-    height: 100vh; }
-  #work h2 {
-    padding: 2rem;
-    font-size: 2.5rem;
-    display: flex; }
-  #work .projects p {
-    font-size: 1.25rem;
-    padding-left: 1vw;
-    padding-right: 1vw; }
-  #work .projects img {
-    width: 55vw; }
-  #work .projects .btn, #work .projects .btn--dark, #work .projects .btn--light {
-    width: 55vw; }
-  #work .projects .item1--desc {
-    width: 45vw; }
-  #work .projects .item2--desc {
-    width: 45vw; }
-  #work .projects .item3--desc {
-    width: 45vw; } }
 
 @media screen and (orientation: landscape) and (max-width: 850px) {
   #work h1 {
