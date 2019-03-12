@@ -68,6 +68,12 @@
 		}
 	}
 
+	#home{
+		.home--button{
+			display: block;
+		}
+	}
+
 	#work {
 		h1 {
 			text-align: center;
@@ -104,6 +110,15 @@
 }
 
 @include mediaSm {
+	#home{
+		.home--button{
+			display: flex;
+			flex-direction: column;
+		}
+		.btn--resume{
+			margin-left:0;
+		}
+	}
 	main {
 		.heading--large {
 			font-size: 3rem;
