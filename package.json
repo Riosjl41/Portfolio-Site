@@ -1,22 +1,24 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "Portfolio Website",
-  "main": "index.js",
-  "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Riosjl41/Portfolio-Site.git"
-  },
-  "author": "Jose Rios",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Riosjl41/Portfolio-Site/issues"
-  },
-  "homepage": "https://github.com/Riosjl41/Portfolio-Site#readme",
-  "dependencies": {
-    "node-sass": "^4.11.0"
-  }
+	"name": "portfolio",
+	"version": "1.0.0",
+	"description": "Portfolio Website",
+	"main": "index.js",
+	"homepage": "https://joserios.github.io/Portfolio-Site",
+	"scripts": {
+		"sass": "node-sass -w scss/ -o dist/css/ --recursive",
+		"deploy": "gh-pages -d dist"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Riosjl41/Portfolio-Site.git"
+	},
+	"author": "Jose Rios",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Riosjl41/Portfolio-Site/issues"
+	},
+	"dependencies": {
+		"gh-pages": "^2.0.1",
+		"node-sass": "^4.11.0"
+	}
 }
