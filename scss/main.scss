@@ -39,7 +39,7 @@ h3 {
 
 	&.heading--small {
 		margin-bottom: 2rem;
-		padding: 0.2rem 1rem;
+		padding: 0.2rem;
 		font-size: 2rem;
 	}
 }
@@ -71,6 +71,11 @@ main {
 	display: flex;
 	align-items: center;
 
+	.home--button{
+		display: flex;
+		padding-top:2rem;
+	}
+
 	.icons {
 		margin-top: 1rem;
 
@@ -84,6 +89,24 @@ main {
 			}
 		}
 	}
+	.btn{
+		&--home {
+		border: 1px solid $highlight-color;
+		text-transform: uppercase;
+		font-weight: bolder;
+		padding: 0.85em 2em;
+		color:$highlight-color;
+
+			&:hover{
+				background-color:$hover-color;
+				color:$secondary-color;
+			}
+		}
+
+		&--resume{
+			margin-left:50px;
+		}
+	}
 }
 
 //Projects
@@ -92,12 +115,12 @@ main {
 		padding: 4rem;
 	}
 
-	h2{
-		font-size:3rem;
-		padding:3rem;
+	h2 {
+		font-size: 3rem;
+		padding: 3rem;
 	}
 
-	.projects {	
+	.projects {
 		.project {
 			border: 1px inset $highlight-color;
 			display: flex;
@@ -124,8 +147,8 @@ main {
 			background-color: darken($primary-color, 1);
 			width: 60vw;
 
-			h1{
-				font-size:3rem;
+			h1 {
+				font-size: 3rem;
 			}
 		}
 
@@ -136,8 +159,8 @@ main {
 			background-color: darken($primary-color, 2);
 			width: 55vw;
 
-			h1{
-				font-size:3rem;
+			h1 {
+				font-size: 3rem;
 			}
 		}
 
@@ -148,8 +171,8 @@ main {
 			background-color: darken($primary-color, 3);
 			width: 55vw;
 
-			h1{
-				font-size:3rem;
+			h1 {
+				font-size: 3rem;
 			}
 		}
 

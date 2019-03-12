@@ -109,7 +109,7 @@ h3 {
   h2.heading--small,
   h3.heading--small {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
+    padding: 0.2rem;
     font-size: 2rem; }
 
 a {
@@ -133,6 +133,9 @@ main {
   height: 100vh;
   display: flex;
   align-items: center; }
+  #home .home--button {
+    display: flex;
+    padding-top: 2rem; }
   #home .icons {
     margin-top: 1rem; }
     #home .icons a {
@@ -141,6 +144,17 @@ main {
       #home .icons a:hover {
         color: #0097a7;
         transition: all 0.5s ease-out; }
+  #home .btn--home {
+    border: 1px solid #ebebeb;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 0.85em 2em;
+    color: #ebebeb; }
+    #home .btn--home:hover {
+      background-color: #0097a7;
+      color: #ff5851; }
+  #home .btn--resume {
+    margin-left: 50px; }
 
 #work h1 {
   padding: 4rem; }
