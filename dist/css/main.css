@@ -284,7 +284,11 @@ main {
   .menu__nav .nav__link {
     font-size: 24px; }
   #home .home--button {
-    display: block; }
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  #home .btn--resume {
+    margin-left: 0; }
   #work h1 {
     text-align: center;
     padding: 2rem; }
@@ -306,7 +310,8 @@ main {
 @media screen and (max-width: 500px) {
   #home .home--button {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: center; }
   #home .btn--resume {
     margin-left: 0; }
   main .heading--large {

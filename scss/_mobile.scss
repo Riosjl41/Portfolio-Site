@@ -70,7 +70,12 @@
 
 	#home{
 		.home--button{
-			display: block;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		.btn--resume{
+			margin-left:0;
 		}
 	}
 
@@ -114,11 +119,13 @@
 		.home--button{
 			display: flex;
 			flex-direction: column;
+			justify-content: center;
 		}
 		.btn--resume{
 			margin-left:0;
 		}
 	}
+	
 	main {
 		.heading--large {
 			font-size: 3rem;
