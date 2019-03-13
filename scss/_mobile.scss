@@ -68,14 +68,14 @@
 		}
 	}
 
-	#home{
-		.home--button{
+	#home {
+		.home--button {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 		}
-		.btn--resume{
-			margin-left:0;
+		.btn--resume {
+			margin-left: 0;
 		}
 	}
 
@@ -115,17 +115,17 @@
 }
 
 @include mediaSm {
-	#home{
-		.home--button{
+	#home {
+		.home--button {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 		}
-		.btn--resume{
-			margin-left:0;
+		.btn--resume {
+			margin-left: 0;
 		}
 	}
-	
+
 	main {
 		.heading--large {
 			font-size: 3rem;
@@ -171,6 +171,8 @@
 	#work {
 		h1 {
 			padding: 1rem;
+			display: flex;
+			flex-direction: column;
 		}
 		.projects {
 			.project {
@@ -210,6 +212,8 @@
 		h1 {
 			padding: 1rem;
 			text-align: center;
+			display: flex;
+			flex-direction: column;
 		}
 	}
 
