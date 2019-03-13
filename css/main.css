@@ -214,6 +214,9 @@ main {
 #about h1 {
   padding: 4rem; }
 
+#about a {
+  color: #ebebeb; }
+
 #about .boxes {
   display: flex;
   flex-wrap: wrap;
