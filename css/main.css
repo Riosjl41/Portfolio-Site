@@ -283,6 +283,12 @@ main {
       transform: translate3d(0, 0, 0); }
   .menu__nav .nav__link {
     font-size: 24px; }
+  #home .home--button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  #home .btn--resume {
+    margin-left: 0; }
   #work h1 {
     text-align: center;
     padding: 2rem; }
@@ -302,6 +308,12 @@ main {
     font-size: 1.5rem; } }
 
 @media screen and (max-width: 500px) {
+  #home .home--button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  #home .btn--resume {
+    margin-left: 0; }
   main .heading--large {
     font-size: 3rem;
     text-align: center;
